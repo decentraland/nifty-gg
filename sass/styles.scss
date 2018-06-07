@@ -140,7 +140,7 @@ header {
   .hero-logo span {
     display: block;
     text-align: right;
-    max-width: 400px;
+    max-width: 430px;
     font-size: 43px;
     text-transform: uppercase;
     font-weight: bold;
@@ -177,9 +177,9 @@ header {
       max-width: 1100px;
     }
     p {
-      padding: 75px 10px;
+      padding: 12px 10px;
       font-size: 32px;
-      line-height: 46px;
+      line-height: 40px;
       font-weight: bold;
       text-align: center;
     }
@@ -220,6 +220,7 @@ header {
       }
       .name {
         font-size: 25px;
+        font-weight: bold;
         color: #fff;
         margin: 0px 25px;
       }
@@ -404,6 +405,12 @@ footer {
     color: $dark;
   }
 }
+.event-subtitle {
+  font-weight: bold;
+  line-height: 40px;
+  font-size: 18px;
+}
+
 .event-details {
   font-size: 16px;
   text-transform: uppercase;
