@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="14px" viewBox="0 0 20 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Hamburger</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="With-Email" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+        <g id="Desktop" transform="translate(-1300.000000, -39.000000)" stroke="#FFFFFF">
+            <g id="NavigationBar" transform="translate(122.000000, 20.000000)">
+                <g id="Hamburger" transform="translate(1179.000000, 19.000000)">
+                    <g id="Line">
+                        <path d="M0,1 L18,1"></path>
+                        <path d="M0,7 L18,7"></path>
+                        <path d="M0,13 L12,13"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
