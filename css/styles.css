@@ -231,13 +231,15 @@ header h2 {
   display: inline-block;
   z-index: 10;
   border-radius: 50%;
-  max-width: 64px;
+  max-width: 80px;
   position: relative;
 }
 /* line 208, ../sass/styles.scss */
 .main .speakers .speaker .speaker-info {
   display: inline-block;
-  vertical-align: super;
+  vertical-align: middle;
+  position: relative;
+  top: -30px;
 }
 /* line 212, ../sass/styles.scss */
 .main .speakers .speaker p {
