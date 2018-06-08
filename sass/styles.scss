@@ -173,10 +173,11 @@ header {
     .img-hackathon {
       float: left;
       margin-right: 80px;
-      max-width: 500px;
+      img {
+        max-width: 500px;
+      }
     }
     .txt-hackathon {
-      float: right;
       font-size: 16px;
       line-height: 30px;
       span {
@@ -994,7 +995,7 @@ a {
         p,
         a {
           padding-left: 15px;
-          width: 95%;
+          width: 80%;
         }
       }
     }
