@@ -422,6 +422,9 @@ header {
     p {
       font-size: 16px;
       line-height: 30px;
+      @media (max-width: 1140px) {
+        max-width: calc(100% - 120px);
+      }
     }
     .inside {
       max-width: 1200px;
@@ -470,6 +473,9 @@ header {
         margin-top: 20px;
         font-size: 16px;
         flex: 1 0 auto;
+        @media (max-width: 1140px) {
+          max-width: calc(100% - 300px);
+        }
       }
       .button {
         background-color: #4f52ff;
@@ -495,11 +501,12 @@ header {
       }
     }
     .right {
+      padding-top: 24px;
+      padding-right: 80px;
+      padding-bottom: 80px;
+      padding-left: 80px;
       @media screen and (min-width: 1140px) {
         width: 50%;
-        padding-top: 24px;
-        padding-right: 80px;
-        padding-bottom: 80px;
         max-width: 50%;
         vertical-align: middle;
       }
@@ -512,17 +519,7 @@ header {
         font-weight: 600;
         margin-bottom: 10px;
       }
-      @media screen and (max-width: 1140px) {
-        h4 {
-          text-align: center;
-        }
-        h5 {
-          text-align: center;
-        }
-        p {
-          text-align: center;
-        }
-      }
+
       p {
         font-size: 16px;
         line-height: 30px;
@@ -530,10 +527,6 @@ header {
       p.journal-cta {
         margin-top: 40px;
         font-weight: 600;
-        @media screen and (max-width: 1140px) {
-          text-align: center;
-          margin-bottom: 30px;
-        }
       }
     }
     @media screen and (max-width: 1140px) {
@@ -657,6 +650,7 @@ footer {
   &.light {
     background: $white;
     color: $dark;
+    font-weight: bold;
   }
 }
 .event-subtitle {
@@ -1227,6 +1221,45 @@ a {
           width: 80%;
         }
       }
+    }
+  }
+}
+
+.main .hackathon-apply-header {
+  color: $text-accent;
+  font-size: 30px;
+  font-weight: 600;
+  margin: 35px;
+}
+
+.main .hackathon-venue {
+  border-top: none;
+  h4,
+  p,
+  a {
+    width: 100% !important;
+    float: none !important;
+    clear: none !important;
+  }
+
+  .left {
+    width: 50%;
+  }
+
+  .right {
+    padding: 80px;
+    padding-top: 200px;
+  }
+}
+
+.main .hackathon-venue {
+  @media (max-width: 1140px) {
+    .left {
+      width: 100% !important;
+    }
+    .right {
+      padding-top: 80px;
+      padding-left: 100px;
     }
   }
 }
