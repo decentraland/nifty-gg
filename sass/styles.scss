@@ -136,6 +136,7 @@ header {
     }
     .ctas a {
       margin: 0px 5px;
+      font-weight: bold;
     }
   }
   .hero-logo span {
@@ -172,16 +173,35 @@ header {
     }
     .img-hackathon {
       float: left;
-      margin-right: 80px;
+      margin-top: 85px;
+      width: 50%;
       img {
         max-width: 500px;
       }
     }
     .txt-hackathon {
+      float: right;
       font-size: 16px;
       line-height: 30px;
+      width: 50%;
       span {
         color: $text-accent;
+      }
+    }
+    .cta-section {
+      clear: both;
+      padding: 48px 24px;
+      h2 {
+        color: $text-accent;
+        font-size: 30px;
+        text-align: center;
+      }
+      .ctas {
+        text-align: center;
+        .btn {
+          font-weight: bold;
+          margin-top: 24px;
+        }
       }
     }
   }
