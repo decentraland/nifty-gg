@@ -172,7 +172,6 @@ header {
       }
     }
     .img-hackathon {
-      float: left;
       margin-top: 85px;
       width: 50%;
       img {
@@ -180,7 +179,6 @@ header {
       }
     }
     .txt-hackathon {
-      float: right;
       font-size: 16px;
       line-height: 30px;
       width: 50%;
@@ -396,7 +394,100 @@ header {
   .hackathon {
     border-top: 1px solid #333333;
     .inside {
+      display: flex;
+      flex-direction: column;
       max-width: 1200px;
+      .row {
+          min-width: 100%;
+          display: flex;
+          justify-content: center;
+      }
+    }
+  }
+  .journals-mailing {
+    border-top: 1px solid #333333;
+    .inside {
+      max-width: 1200px;
+      display: flex;
+      flex-direction: row;
+      align-items: top;
+    }
+    .left {
+      padding-top: 20px;
+      vertical-align: top;
+      width: 50%;
+      max-width: 50%;
+    }
+    h4 {
+        font-weight: 600;
+        border: 0;
+        font-size: 42px;
+        text-align: center;
+        overflow: wrap;
+    }
+    .mailing-list {
+        padding-right: 20px;
+        .email {
+            background-color: black;
+            width: 300px;
+            height: 46px;
+            top: 2px;
+            border: 1px solid #333;
+            border-radius: 10px;
+            outline: none;
+            color: white;
+            padding-left: 10px;
+            float: left;
+            margin-right: 12px;
+            font-size: 16px;
+        }
+        .button {
+            background-color: #4f52ff;
+            border: 1px solid #4f52ff;
+            font-size: 14px;
+            border-radius: 10px;
+            color: white;
+            text-transform: uppercase;
+            width: 150px;
+            height: 50px;
+        }
+        #mc_embed_signup div.mce_inline_error {
+            background: none;
+        }
+    }
+    .right {
+      width: 50%;
+      padding-top: 20px;
+      padding-bottom: 80px;
+      max-width: 50%;
+      vertical-align: middle;
+      h4 {
+          text-align: left;
+      }
+      h5 {
+        color: $text-accent;
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+      p {
+            font-size: 16px;
+                line-height: 30px;
+      }
+      p.journal-cta {
+          margin-top: 40px;
+          font-weight: 600;
+      }
+    }
+    @media screen and (min-width: 1140px) {
+      .left {
+        max-width: 50%;
+      }
+      .right {
+        max-width: 50%;
+        border-left: 1px dashed #333333;
+        padding-left: 80px;
+      }
     }
   }
   .join {
@@ -668,7 +759,7 @@ a {
     height: 444px;
     transform-origin: -318px 0px;
     left: 0%;
-    bottom: -1780px;
+    bottom: -2280px;
   }
 }
 .header {
@@ -864,11 +955,9 @@ a {
   }
 
   .main article .txt-hackathon {
-    float: none;
     width: 100%;
   }
   .main article .img-hackathon {
-    float: none;
     text-align: center;
     width: 100%;
   }
