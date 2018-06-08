@@ -391,7 +391,7 @@ header {
         display: inline-block;
       }
       .right {
-        max-width: 50%;
+        max-width: 49%;
         display: inline-block;
       }
     }
@@ -1220,9 +1220,6 @@ a {
       }
       .left {
         width: 100%;
-        img {
-          display: none;
-        }
         h4,
         p,
         a {
