@@ -359,8 +359,7 @@ header {
       clear: both;
     }
     .left {
-      display: inline-block;
-      max-width: 50%;
+      margin: auto;
       vertical-align: top;
       margin-top: 80px;
       img {
@@ -369,9 +368,29 @@ header {
     }
     .right {
       vertical-align: middle;
-      display: inline-block;
-      max-width: 50%;
       margin-top: 80px;
+      margin: auto;
+      img {
+        width: 100%;
+      }
+    }
+    @media screen and (max-width: 1140px) {
+      .left {
+        max-width: 100%;
+      }
+      .right {
+        max-width: 100%;
+      }
+    }
+    @media screen and (min-width: 1140px) {
+      .left {
+        max-width: 50%;
+        display: inline-block;
+      }
+      .right {
+        max-width: 50%;
+        display: inline-block;
+      }
     }
   }
   .hackathon {
