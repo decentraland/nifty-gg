@@ -383,11 +383,10 @@ header {
 *  footer
 *  */
 footer {
-  min-height: 50px;
   background: #000000;
   border-top: 1px solid #333333;
   text-align: center;
-  padding-top: 30px;
+  padding: 30px 30px 12px 30px;
   font-size: 14px;
   position: relative;
   img {
@@ -399,6 +398,8 @@ footer {
   }
   p {
     display: inline-block;
+    position: relative;
+    top: -10px;
   }
 
   .social-icons {
