@@ -214,6 +214,7 @@ header {
         padding: 0 24px;
         max-width: 500px;
         margin: auto;
+        margin-bottom: 64px;
         padding-top: 64px;
         p {
           padding: 12px 10px;
@@ -379,6 +380,21 @@ header {
       max-width: 1200px;
     }
   }
+  .join {
+    border-top: 1px solid #333333;
+    text-align: center;
+    padding: 120px 0 150px;
+    h2 {
+      font-size: 42px;
+    }
+    .ctas {
+      font-weight: bold;
+      .btn {
+        margin-top: 12px;
+        margin-right: 24px;
+      }
+    }
+  }
   .cta {
     text-align: center;
     border-top: 1px solid #333333;
@@ -485,6 +501,10 @@ footer {
     /* background-color: red; */
     vertical-align: bottom;
   }
+}
+
+.event-venues {
+  margin-top: 8px;
 }
 
 a {
@@ -822,6 +842,16 @@ a {
   #main-nav .stats ul li {
     display: block;
     line-height: 38px;
+  }
+
+  .main article .txt-hackathon {
+    float: none;
+    width: 100%;
+  }
+  .main article .img-hackathon {
+    float: none;
+    text-align: center;
+    width: 100%;
   }
 }
 
