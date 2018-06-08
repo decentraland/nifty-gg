@@ -172,10 +172,15 @@ header {
       }
     }
     .img-hackathon {
-      margin-top: 85px;
+      @media screen and (min-width: 1140px) {
+          margin-top: 85px;
+      }
       width: 50%;
       img {
         max-width: 500px;
+        @media screen and (max-width: 1140px) {
+            max-width: 100%;
+        }
       }
     }
     .txt-hackathon {
@@ -401,6 +406,13 @@ header {
           min-width: 100%;
           display: flex;
           justify-content: center;
+          @media screen and (max-width: 1140px) {
+            flex-direction: column;
+            margin-bottom: 20px;
+            .apply-cont {
+                text-align: center;
+            }
+          }
       }
     }
   }
@@ -411,6 +423,9 @@ header {
       display: flex;
       flex-direction: row;
       align-items: top;
+      @media screen and (max-width: 1140px) {
+        flex-direction: column;
+      }
     }
     .left {
       padding-top: 20px;
@@ -426,7 +441,9 @@ header {
         overflow: wrap;
     }
     .mailing-list {
-        padding-right: 20px;
+        .mc-field-group {
+            text-align: center;
+        }
         .email {
             background-color: black;
             width: 300px;
@@ -437,8 +454,9 @@ header {
             outline: none;
             color: white;
             padding-left: 10px;
-            float: left;
             margin-right: 12px;
+            margin-left: 12px;
+            margin-top: 20px;
             font-size: 16px;
         }
         .button {
@@ -448,19 +466,26 @@ header {
             border-radius: 10px;
             color: white;
             text-transform: uppercase;
+            margin-top: 20px;
             width: 150px;
             height: 50px;
         }
         #mc_embed_signup div.mce_inline_error {
             background: none;
         }
+        #mce-success-response {
+            text-align: center;
+            margin-top: 20px;
+        }
     }
     .right {
-      width: 50%;
-      padding-top: 20px;
-      padding-bottom: 80px;
-      max-width: 50%;
-      vertical-align: middle;
+      @media screen and (min-width: 1140px) {
+        width: 50%;
+        padding-top: 20px;
+        padding-bottom: 80px;
+        max-width: 50%;
+        vertical-align: middle;
+      }
       h4 {
           text-align: left;
       }
@@ -470,6 +495,17 @@ header {
         font-weight: 600;
         margin-bottom: 10px;
       }
+      @media screen and (max-width: 1140px) {
+          h4 {
+              text-align: center;
+          }
+          h5 {
+              text-align: center;
+          }
+          p {
+              text-align: center;
+          }
+      }
       p {
             font-size: 16px;
                 line-height: 30px;
@@ -477,6 +513,18 @@ header {
       p.journal-cta {
           margin-top: 40px;
           font-weight: 600;
+          @media screen and (max-width: 1140px) {
+              text-align: center;
+              margin-bottom: 30px;
+          }
+      }
+    }
+    @media screen and (max-width: 1140px) {
+      .left {
+        min-width: 100%;
+      }
+      .right {
+        min-width: 100%;
       }
     }
     @media screen and (min-width: 1140px) {
