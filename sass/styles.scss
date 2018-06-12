@@ -172,19 +172,20 @@ header {
       }
     }
     .img-hackathon {
-      @media screen and (min-width: 1140px) {
+      @media screen and (min-width: 768px) {
         margin-top: 85px;
       }
       width: 50%;
       img {
         max-width: 500px;
-        @media screen and (max-width: 1140px) {
+        @media screen and (max-width: 768px) {
           max-width: 100%;
         }
       }
     }
     .txt-hackathon {
       font-size: 16px;
+      padding: 15px;
       line-height: 30px;
       width: 50%;
       span {
@@ -317,8 +318,9 @@ header {
       padding: 100px 10px;
     }
     .sponsors-wrapper {
+      padding-bottom: 30px;
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
       flex-wrap: wrap;
       max-width: 897px;
       margin: 0 auto;
@@ -377,7 +379,7 @@ header {
         width: 100%;
       }
     }
-    @media screen and (max-width: 1140px) {
+    @media screen and (max-width: 768px) {
       .left {
         max-width: 100%;
       }
@@ -385,9 +387,10 @@ header {
         max-width: 100%;
       }
     }
-    @media screen and (min-width: 1140px) {
+    @media screen and (min-width: 768px) {
       .left {
         max-width: 50%;
+        min-width: 50%;
         display: inline-block;
       }
       .right {
@@ -406,7 +409,7 @@ header {
         min-width: 100%;
         display: flex;
         justify-content: center;
-        @media screen and (max-width: 1140px) {
+        @media screen and (max-width: 768px) {
           flex-direction: column;
           margin-bottom: 20px;
           .apply-cont {
@@ -422,26 +425,25 @@ header {
     p {
       font-size: 16px;
       line-height: 30px;
-      @media (max-width: 1140px) {
-        max-width: calc(100% - 120px);
-      }
     }
     .inside {
       max-width: 1200px;
       display: flex;
       flex-direction: row;
       align-items: top;
-      @media screen and (max-width: 1140px) {
+      @media screen and (max-width: 768px) {
         flex-direction: column;
       }
     }
-    .left {
-      padding-left: 80px;
-      padding-top: 24px;
-      padding-right: 80px;
-      vertical-align: top;
-      width: 50%;
-      max-width: 50%;
+    @media screen and (min-width: 768px) {
+      .left {
+        padding-left: 80px;
+        padding-top: 24px;
+        padding-right: 80px;
+        vertical-align: top;
+        width: 50%;
+        max-width: 50%;
+      }
     }
     h4 {
       font-weight: 600;
@@ -451,6 +453,23 @@ header {
       overflow: wrap;
     }
     .mailing-list {
+      @media screen and (max-width: 768px) {
+        text-align: center;
+        h5 {
+            text-align: center;
+        }
+        h4 {
+            text-align: center;
+        }
+        .mc-field-group {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        #mce-EMAIL {
+            width: 90%;
+        }
+      }
       h5 {
         color: $text-accent;
         font-size: 24px;
@@ -473,7 +492,8 @@ header {
         margin-top: 20px;
         font-size: 16px;
         flex: 1 0 auto;
-        @media (max-width: 1140px) {
+        min-width: 200px;
+        @media (min-width: 1100px) {
           max-width: calc(100% - 300px);
         }
       }
@@ -501,17 +521,24 @@ header {
       }
     }
     .right {
-      padding-top: 24px;
-      padding-right: 80px;
-      padding-bottom: 80px;
-      padding-left: 80px;
-      @media screen and (min-width: 1140px) {
+      @media screen and (max-width: 768px) {
+        text-align: center;
+        h4 {
+          text-align: center;
+        }
+        padding-bottom: 40px;
+      }
+      @media screen and (min-width: 768px) {
+        padding-top: 24px;
+        padding-right: 80px;
+        padding-bottom: 80px;
+        padding-left: 80px;
         width: 50%;
         max-width: 50%;
         vertical-align: middle;
-      }
-      h4 {
-        text-align: left;
+        h4 {
+          text-align: left;
+        }
       }
       h5 {
         color: $text-accent;
@@ -519,20 +546,20 @@ header {
         font-weight: 600;
         margin-bottom: 10px;
       }
-
       p {
+        width: 100%;
         font-size: 16px;
         line-height: 30px;
       }
       p.journal-cta {
         margin-top: 40px;
         font-weight: 600;
-        @media (max-width: 1140px) {
+        @media (max-width: 768px) {
           text-align: center;
         }
       }
     }
-    @media screen and (max-width: 1140px) {
+    @media screen and (max-width: 768px) {
       .left {
         min-width: 100%;
       }
@@ -540,7 +567,7 @@ header {
         min-width: 100%;
       }
     }
-    @media screen and (min-width: 1140px) {
+    @media screen and (min-width: 768px) {
       .left {
         max-width: 50%;
       }
@@ -560,7 +587,7 @@ header {
     }
     .ctas {
       font-weight: bold;
-      @media screen and (min-width: 1140px) {
+      @media screen and (min-width: 768px) {
         .btn {
           margin-right: 24px;
         }
@@ -829,7 +856,10 @@ a {
     height: 444px;
     transform-origin: -318px 0px;
     left: 0%;
-    bottom: -2080px;
+    bottom: -2950px;
+    @media screen and (min-width: 1300px) {
+      bottom: -2880px;
+    }
   }
 }
 .header {
@@ -907,7 +937,7 @@ a {
   display: none;
 }
 
-@media screen and (max-width: 1140px) {
+@media screen and (max-width: 768px) {
   #main-nav {
     .stats ul li {
       margin: 0 6px;
@@ -1025,12 +1055,46 @@ a {
   }
 
   .main article .txt-hackathon {
-    width: 100%;
+    width: 90%;
+    padding-right: 15px;
   }
   .main article .img-hackathon {
     text-align: center;
     width: 100%;
   }
+}
+
+#sponsor-decentraland {
+    width: auto;
+    height: auto;
+    max-width: 300px;
+    max-height: 120px;
+}
+#sponsor-kinetic {
+    position: relative;
+    top: 5px;
+    width: auto;
+    height: auto;
+    max-width: 250px;
+    max-height: 110px;
+}
+#sponsor-coinbase {
+    width: auto;
+    height: auto;
+    max-width: 220px;
+    max-height: 80px;
+}
+#sponsor-0x {
+    width: auto;
+    height: auto;
+    max-width: 220px;
+    max-height: 80px;
+}
+#sponsor-ecomi {
+    width: auto;
+    height: auto;
+    max-width: 140px;
+    max-height: 70px;
 }
 
 @media screen and (max-width: 768px) {
@@ -1100,6 +1164,7 @@ a {
       }
       .sponsors-wrapper {
         justify-content: center;
+        margin-bottom: 30px;
         img {
           width: 100%;
           max-width: 200px;
@@ -1222,6 +1287,10 @@ a {
         a {
           padding-left: 15px;
           width: 80%;
+          @media screen and (max-width: 768px) {
+            margin-left: 15px;
+            width: 95%;
+          }
         }
       }
     }
@@ -1247,22 +1316,26 @@ a {
 
   .left {
     width: 50%;
+    max-width: 50%;
   }
 
   .right {
+    width: 50%;
+    max-width: 50%;
     padding: 80px;
     padding-top: 200px;
   }
 }
 
 .main .hackathon-venue {
-  @media (max-width: 1140px) {
+  @media (max-width: 768px) {
     .left {
       width: 100% !important;
     }
     .right {
+      max-width: 100%;
       padding-top: 80px;
-      padding-left: 100px;
+      padding-left: 10px;
     }
   }
 }
